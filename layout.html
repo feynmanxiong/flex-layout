@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			html, body, div{
+				margin: 0;
+				padding: 0;
+			}
+			.container{
+				display: flex;			
+				flex-direction: column;
+				justify-content:space-between;
+				height: 100%;
+				width: 100%;
+			}	
+			.container .up{
+				height: 7%;
+				width: 100%;
+				background: green;
+				position: absolute;
+				top: 0;
+				padding: 5px;
+				box-sizing: border-box;
+			}
+			.container .up .up-left{
+				float: left;
+				width: 500px;
+				height: 100%;
+				border: 1px solid red;
+			}
+			.container .up .up-right{
+				float: right;
+				width: 200px;
+				height: 100%;
+				border: 1px solid red;
+			}
+			.container .up .up-center{
+				margin: 0 210px 0 510px;
+				border: 1px solid red;
+				height: 100%;
+			}
+			.container .down{
+				height: 90%;
+				width: 100%;
+				/*background: red;*/
+				position: absolute;
+				bottom: 2%;
+				display: flex;
+				justify-content: space-between;
+			}
+			.container .down .left{
+				height: 100%;
+				width: 30%;
+				border: 1px solid black;
+				background: mediumpurple;
+				padding: 10px;
+				box-sizing: border-box;
+				display: flex;
+				flex-direction: column;
+			}
+			.container .down .left .left-top{
+				height: 20%;
+				width: 100%;
+				border: 1px solid red;
+			}
+			.container .down .left .left-center{
+				height: 60%;
+				width: 100%;
+				border: 1px solid red;
+			}
+			.container .down .left .left-bottom{
+				height: 20%;
+				width: 100%;
+				border: 1px solid red;
+			}
+			.container .down .center{
+				height: 100%;
+				width: 57%;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				
+			}
+			.container .down .center .center-top{
+				height: 22%;
+				width: 100%;
+				/*border: 1px solid red;*/
+			}
+			.container .down .center .center-top .list-wrap{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				list-style: none;
+				flex-wrap: wrap;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				justify-content: space-between;
+				align-content: space-between;
+				
+			}
+			.container .down .center .center-top .list-wrap li{
+				width: 15%;
+				height: 46%;
+				
+				border: 1px solid black;
+				flex-shrink: 1;
+			}
+			.container .down .center .center-center{
+				height: 66%;
+				width: 100%;
+				/*border: 1px solid red;*/
+			}
+			.container .down .center .center-center .list-wrap{
+				display: flex;
+				width: 100%;
+				height: 100%;
+				list-style: none;
+				flex-wrap: wrap;
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				justify-content: space-between;
+				align-content: space-between;
+				
+			}
+			.container .down .center .center-center .list-wrap li{
+				width: 15%;
+				height: 15%;
+				
+				border: 1px solid black;
+				flex-shrink: 1;
+			}
+			.container .down .center .center-bottom{
+				height: 10%;
+				width: 100%;
+				padding-top: 5px;
+				/*border: 1px solid red;*/
+				display: flex;
+				justify-content: space-between;
+			}
+			.container .down .center .center-bottom button{
+				width: 15%;
+				height: 100%;
+			}
+			.container .down .right{
+				height: 100%;
+				width: 11%;
+				border: 1px solid black;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+			.container .down .right .right-up{
+				height: 46%;
+				width: 100%;
+				border: 1px solid red;
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+				padding-right: 10px;
+				box-sizing: border-box;
+			}
+			.container .down .right .right-up div{
+				
+				height: 20%;
+				width: 100%;
+				margin-bottom: 20px;
+				border: 1px solid blue;
+			}
+			.container .down .right .right-down{
+				height: 45%;
+				border: 1px solid red;
+				padding-right: 10px;
+				box-sizing: border-box;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="up">
+				<div class="up-left">left</div>				
+				<div class="up-right">right</div>
+				<div class="up-center">center</div>
+			</div>
+			<div class="down">
+				<div class="left">
+					<div class="left-top">top</div>
+					<div class="left-center">center</div>
+					<div class="left-bottom">bottom</div>
+				</div>
+				<div class="center">
+					<div class="center-top">
+						<ul class="list-wrap">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="center-center">
+						<ul class="list-wrap">
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+					<div class="center-bottom">
+						<button>1</button>
+						<button>2</button>
+						<button>3</button>
+						<button>4</button>
+						<button>5</button>
+						<button>6</button>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right-up">
+						<div>1</div>
+						<div>1</div>
+						<div>1</div>
+						<div>1</div>
+					</div>
+					<div class="right-down">
+						<button>5</button>
+						<button>6</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+</html>
